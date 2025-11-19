@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ekitiLogo from '../assets/images/ekitiLogo.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +26,12 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
+            <Link to="/home" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
               Home
-            </a>
-            <a href="#enroll" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
-              Enroll
-            </a>
+            </Link>
+            <Link to="/dashboard" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
+              Dashboard
+            </Link>
             <a href="#attendance" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
               Mark Attendance
             </a>
@@ -39,9 +40,9 @@ const Navbar = () => {
                    backgroundImage: 'repeating-linear-gradient(to bottom, white 0, white 4px, transparent 4px, transparent 8px)'
                  }}>
             </div>
-            <a href="#admin" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
+            <Link to="/adminpage" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
               Admin
-            </a>
+            </Link>
           </div>
 
           {/* Hamburger Menu */}
