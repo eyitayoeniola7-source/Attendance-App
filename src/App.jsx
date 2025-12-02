@@ -4,6 +4,7 @@ import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Dashboard from './pages/Dashboard';
 import AdminPage from './pages/AdminPage';
+import HomePage from './pages/HomePage';  
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
@@ -22,7 +23,7 @@ function App() {
       <div className="min-h-screen bg-gray-50">
         <Navbar />
         <Routes>
-           <Route path="/" element={<Navigate to= "/signin" />} />
+           <Route path="/homepage" element={<HomePage />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/dashboard" element={<Dashboard />} />
@@ -40,7 +41,7 @@ function App() {
         />
         
         {/* Catch all - redirect to signin */}
-        <Route path="*" element={<Navigate to="/signin" />} />
+        {/*<Route path="*" element={<Navigate to="/signin" />} />*/}
 
 
         </Routes>

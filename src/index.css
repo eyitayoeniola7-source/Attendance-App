@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus,
+*:active,
+*:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Specifically target divs that might get focus */
+div:focus,
+div:active {
+    outline: none !important;
+}

@@ -26,7 +26,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/home" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
+            <Link to="/homepage" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
               Home
             </Link>
             <Link to="/dashboard" className="text-black border border-yellow-300 rounded-md bg-yellow-300 hover:bg-white/20 px-4 py-2 rounded-md transition-colors text-xs font-bold">
